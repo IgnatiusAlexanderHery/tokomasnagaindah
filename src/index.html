@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toko Mas Naga Indah</title>
+    <link href="./output.css" rel="stylesheet" />
+    <!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
+  </head>
+  <body class="mx-4">
+    <nav id="navbar" class="columns-2 px-4 fixed w-full transition-transform duration-300 transform h-16 bg-white z-10">
+      <div class="w-full h-full flex items-center justify-between">
+        <img src="img/Naga Indah Transparant.png" alt="Logo" class="w-16 aspect-square" />
+      </div>
+      <div class="lg:hidden text-xl p-2 flex justify-end">
+        <button id="menu-button">☰</button>
+      </div>
+      <div class="w-full h-full max-lg:hidden">
+        <ul id="menu" class="hidden lg:flex justify-evenly text-center items-center h-full">
+          <li>
+            <a href="#">Beranda</a>
+          </li>
+          <li>
+            <a href="#Tentang">Tentang</a>
+          </li>
+          <li>
+            <a href="#Produk">Produk</a>
+          </li>
+          <li>
+            <a href="#Jasa">Jasa</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Full screen menu for small screens -->
+    <div id="full-screen-menu" class="fixed top-0 left-0 w-full h-full bg-white flex-col justify-center items-center hidden z-20">
+      <button id="close-menu-button" class="absolute top-4 right-4 text-2xl">X</button>
+      <ul id="full-screen-menu-option" class="text-center space-y-8 text-xl">
+        <li>
+          <a href="#" class="block">Beranda</a>
+        </li>
+        <li>
+          <a href="#Tentang" class="block">Tentang</a>
+        </li>
+        <li>
+          <a href="#Produk" class="block">Produk</a>
+        </li>
+        <li>
+          <a href="#Jasa" class="block">Jasa</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Home -->
+    <div id="#" class="columns-2">
+      <div class="flex items-center">
+        <img src="img/Naga Indah 1.png" alt="image 1" class="w-full h-screen" />
+      </div>
+      <div class="h-screen flex items-center justify-center">
+        <div class="font-serif !leading-snug">
+          <span class="[font-size:_clamp(2em,5vw,10em)] font-bold bg-red-200 text-white px-4 fade-left"> Toko Mas</span> <br />
+          <span class="[font-size:_clamp(2em,5vw,10em)] font-bold">Yang </span>
+          <span class="[font-size:_clamp(2em,5vw,10em)] font-bold bg-red-200 text-white px-4 fade-right"> Terbaik </span> <br />
+          <span class="[font-size:_clamp(2em,5vw,10em)] font-bold">Di Palembang</span> <br />
+          <button class="bg-red-200 text-white px-4 py-2 rounded-lg mt-4"><a href="#Produk"> Lihat Produk</a></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- About -->
+    <div class="py-8 min-h-screen bg-red-200" id="Tentang">
+      <div class="text-center w-full">
+        <div class="grid lg:grid-cols-4 gap-4 m-4 grid-cols-2 border-spacing-2">
+          <div class="h-80 text-center flex flex-col justify-center items-center col-span-2 text-2xl fade-left">
+            <p class="text-gray-700 text-ellipsis text-pretty px-12 col-span-2">
+              Toko perhiasan yang menjual dan menerima emas kadar <span class="text-red-600">70%</span> dan <span class="text-red-600">92%</span> mau dari toko sendiri maupun toko mas lain yang memiliki kadar emas yang sama
+            </p>
+          </div>
+          <div class="h-80 bg-white text-center flex flex-col justify-center items-center left fade-right">
+            <p class="text-3xl text-red-400">20</p>
+            <p class="text-2xl">Tahun</p>
+          </div>
+          <div class="h-80 bg-white text-center flex flex-col justify-center items-center fade-right">
+            <img src="img/Naga Indah Transparant.png" alt="" class="object-cover" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product -->
+    <div class="container mx-auto py-8" id="Produk">
+      <div class="text-center">
+        <h2 class="text-2xl font-bold">Produk Kami</h2>
+        <div class="text-sm">Emas berkualitas dengan harga terjangkau</div>
+        <div class="grid lg:grid-cols-3 gap-4 grid-cols-1">
+          <div class="bg-red-100 p-4 shadow-md fade-left">
+            <img src="img/cincin.png" alt="Product 1" class="w-1/3 aspect-square m-auto" />
+            <h3 class="[font-size:_clamp(0.5rem,5vw,1rem)] font-bold">Emas 92%</h3>
+            <p class="text-gray-500 [font-size:_clamp(0.5rem,5vw,1rem)]">Tersedia Cincin, Gelang, Kalung, Liontin, Antingan</p>
+          </div>
+          <div class="bg-red-100 p-4 shadow-md fade-left">
+            <img src="img/Antingan.png" alt="Product 2" class="w-1/3 aspect-square m-auto object-cover" />
+            <h3 class="[font-size:_clamp(0.5rem,5vw,1rem)] font-bold">Emas 70%</h3>
+            <p class="text-gray-500 [font-size:_clamp(0.5rem,5vw,1rem)]">Tersedia Antingan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service -->
+    <div class="container mx-auto py-8" id="Jasa">
+      <div class="text-center">
+        <h2 class="text-2xl font-bold">Jasa Kami</h2>
+        <div class="text-sm">Pelayanan berkualitas dan cepat</div>
+        <div class="grid lg:grid-cols-3 gap-4 grid-cols-1">
+          <div class="bg-red-100 p-4 shadow-md fade-right">
+            <img src="img/sambung mas.png" alt="Product 2" class="w-1/3 aspect-square m-auto object-cover" />
+            <h3 class="[font-size:_clamp(0.5rem,5vw,1rem)] font-bold">Sambung emas 92%</h3>
+            <p class="text-gray-500 [font-size:_clamp(0.5rem,5vw,1rem)]">Tersedia Cincin, Gelang, Kalung, Antingan</p>
+          </div>
+          <div class="bg-red-100 p-4 shadow-md fade-right">
+            <img src="img/cuci emas.png" alt="Product 2" class="w-1/3 aspect-square m-auto object-cover" />
+            <h3 class="[font-size:_clamp(0.5rem,5vw,1rem)] font-bold">Cuci emas 92%</h3>
+            <p class="text-gray-500 [font-size:_clamp(0.5rem,5vw,1rem)]">Tersedia Cincin, Gelang, Kalung, Antingan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.660083363947!2d104.66560177472927!3d-2.9137917970625753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b7350da964553%3A0x964fc9c0f0dbfe0!2sToko%20Mas%20Naga%20Indah!5e0!3m2!1sen!2sid!4v1720352716784!5m2!1sen!2sid"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        class="w-full aspect-video"
+      ></iframe>
+    </div>
+  </body>
+</html>
+
+<script>
+  let lastScrollTop = 0;
+  const navbar = document.getElementById("navbar");
+  const menuButton = document.getElementById("menu-button");
+  const menu = document.getElementById("menu");
+  const fullScreenMenu = document.getElementById("full-screen-menu");
+  const closeMenuButton = document.getElementById("close-menu-button");
+  const fullScreenMenuOptions = document.querySelectorAll("#full-screen-menu-option li a");
+
+  window.addEventListener("scroll", function () {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+      navbar.classList.add("-translate-y-full");
+    } else {
+      navbar.classList.remove("-translate-y-full");
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+  });
+
+  menuButton.addEventListener("click", function () {
+    fullScreenMenu.classList.toggle("hidden");
+  });
+
+  closeMenuButton.addEventListener("click", function () {
+    fullScreenMenu.classList.add("hidden");
+  });
+
+  fullScreenMenuOptions.forEach((option) => {
+    option.addEventListener("click", function () {
+      fullScreenMenu.classList.toggle("hidden");
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.1,
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-fade-in-left");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, options);
+
+    const targets = document.querySelectorAll(".fade-left");
+    targets.forEach((target) => {
+      observer.observe(target);
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.1,
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-fade-in-right");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, options);
+
+    const targets = document.querySelectorAll(".fade-right");
+    targets.forEach((target) => {
+      observer.observe(target);
+    });
+  });
+</script>
